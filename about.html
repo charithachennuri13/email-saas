@@ -11,26 +11,38 @@
     <link rel="stylesheet" href="toast.css">
 </head>
 <body>
-    <nav class="navbar py-4 backdrop-blur-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-            <a href="index.html" class="logo">EmailFlow</a>
-            <div class="nav-links hidden md:flex space-x-6 items-center">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="login.html">Login</a>
-                <a href="signup.html" class="signup">Sign Up</a>
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 py-4 backdrop-blur-md" id="nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex bg-transparent text-white justify-between items-center">
+            <a href="index.html" class="logo text-white text-2xl font-bold">EmailFlow</a>
+            <div class="nav-links hidden md:flex space-x-6 text-white items-center">
+                <a href="index.html" class="hover:text-purple-300 transition-colors">Home</a>
+                <a href="about.html" class="hover:text-purple-300 transition-colors">About</a>
+                <a href="contact.html" class="hover:text-purple-300 transition-colors">Contact</a>
+                <a href="login.html" class="hover:text-purple-300 transition-colors">Login</a>
+                <a href="signup.html"
+                    class="signup text-white bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-full hover:from-purple-700 hover:to-pink-700 transition-all">
+                    Sign Up
+                </a>
             </div>
-            <button id="menu-toggle" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
-        </div>
-        <div id="mobile-menu" class="mobile-menu hidden md:hidden px-4 py-4 bg-white">
-            <a href="index.html" class="block py-2">Home</a>
-            <a href="about.html" class="block py-2">About</a>
-            <a href="contact.html" class="block py-2">Contact</a>
-            <a href="login.html" class="block py-2">Login</a>
-            <a href="signup.html" class="block py-2 bg-pink-400 text-white px-4 rounded-full">Sign Up</a>
+            <button id="menu-toggle" class="md:hidden text-2xl text-white"><i class="fas fa-bars"></i></button>
         </div>
     </nav>
+    <div id="mobile-menu" class="mobile-menu md:hidden">
+        <div class="flex justify-between items-center p-4 border-b border-gray-200">
+            <span class="text-lg font-bold text-purple-600">EmailFlow</span>
+            <button id="close-menu" class="close-btn text-2xl text-black"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="flex flex-col p-4 space-y-3">
+            <a href="index.html" class="block py-2 text-black hover:text-purple-600 transition-colors">Home</a>
+            <a href="about.html" class="block py-2 text-black hover:text-purple-600 transition-colors">About</a>
+            <a href="contact.html" class="block py-2 text-black hover:text-purple-600 transition-colors">Contact</a>
+            <a href="login.html" class="block py-2 text-black hover:text-purple-600 transition-colors">Login</a>
+            <a href="signup.html"
+                class="block py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 rounded-full hover:from-purple-700 hover:to-pink-700 transition-all">Sign
+                Up</a>
+        </div>
+    </div>
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay md:hidden"></div>
 
     <section class="py-24 pt-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
