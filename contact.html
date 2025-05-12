@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmailFlow - Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="toast.css">
+</head>
+<body>
+    <nav class="navbar py-4 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="index.html" class="logo">EmailFlow</a> 
+            <div class="nav-links hidden md:flex space-x-6 items-center">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html" class="signup">Sign Up</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu hidden md:hidden px-4 py-4 bg-white">
+            <a href="index.html" class="block py-2">Home</a>
+            <a href="about.html" class="block py-2">About</a>
+            <a href="contact.html" class="block py-2">Contact</a>
+            <a href="login.html" class="block py-2">Login</a>
+            <a href="signup.html" class="block py-2 bg-pink-400 text-white px-4 rounded-full">Sign Up</a>
+        </div>
+    </nav>
+
+    <section class="py-24 pt-20 bg-slate-50 relative">
+        <div class="absolute inset-0 opacity-5">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Map Background" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 animate-fade-in">Get in Touch</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="scroll-reveal">
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    <p class="text-lg text-slate-600 mb-4"><i class="fas fa-envelope text-purple-600 mr-2"></i>support@emailflow.com</p>
+                    <p class="text-lg text-slate-600 mb-4"><i class="fas fa-phone text-purple-600 mr-2"></i>(123) 456-7890</p>
+                    <p class="text-lg text-slate-600 mb-8"><i class="fas fa-map-marker-alt text-purple-600 mr-2"></i>123 Innovation Street, Tech City</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-slate-600 hover:text-purple-600"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#" class="text-slate-600 hover:text-purple-600"><i class="fab fa-linkedin text-2xl"></i></a>
+                        <a href="#" class="text-slate-600 hover:text-purple-600"><i class="fab fa-instagram text-2xl"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form" class="bg-white p-8 rounded-2xl shadow-xl scroll-reveal">
+                    <div class="mb-6">
+                        <label for="contact-name" class="block text-sm font-medium text-slate-700">Name</label>
+                        <input type="text" id="contact-name" class="mt-1 p-4 w-full border border-gray-300 rounded-lg input-focus" required>
+                        <p id="contact-name-error" class="text-pink-500 text-sm hidden mt-1">Name is required</p>
+                    </div>
+                    <div class="mb-6">
+                        <label for="contact-email" class="block text-sm font-medium text-slate-700">Email</label>
+                        <input type="email" id="contact-email" class="mt-1 p-4 w-full border border-gray-300 rounded-lg input-focus" required>
+                        <p id="contact-email-error" class="text-pink-500 text-sm hidden mt-1">Valid email is required</p>
+                    </div>
+                    <div class="mb-6">
+                        <label for="contact-message" class="block text-sm font-medium text-slate-700">Message</label>
+                        <textarea id="contact-message" class="mt-1 p-4 w-full border border-gray-300 rounded-lg input-focus" rows="6" required></textarea>
+                        <p id="contact-message-error" class="text-pink-500 text-sm hidden mt-1">Message is required</p>
+                    </div>
+                    <button type="submit" class="w-full bg-pink-400 text-white px-6 py-3 rounded-full hover:bg-pink-500 transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">EmailFlow</h3>
+                    <p class="text-slate-400">Empowering businesses with next-gen email marketing.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html">Features</a></li>
+                        <li><a href="index.html">Pricing</a></li>
+                        <li><a href="index.html">Integrations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#"><i class="fab fa-linkedin text-2xl"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-slate-400">© 2025 EmailFlow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

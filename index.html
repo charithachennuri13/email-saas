@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmailFlow - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="toast.css">
+    <style>
+        .testimonials-scroll {
+            animation: scroll 30s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50%); }
+        }
+        .logo-ticker {
+            animation: logoScroll 20s linear infinite;
+        }
+        @keyframes logoScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 py-4 backdrop-blur-md" id="nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex bg-transparent text-white justify-between items-center">
+            <a href="index.html" class="logo text-white text-2xl font-bold">EmailFlow</a>
+            <div class="nav-links hidden md:flex space-x-6 text-white items-center">
+                <a href="index.html" class="hover:text-purple-300 transition-colors">Home</a>
+                <a href="about.html" class="hover:text-purple-300 transition-colors">About</a>
+                <a href="contact.html" class="hover:text-purple-300 transition-colors">Contact</a>
+                <a href="login.html" class="hover:text-purple-300 transition-colors">Login</a>
+                <a href="signup.html" class="signup text-white bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-full hover:from-purple-700 hover:to-pink-700 transition-all">
+                    Sign Up
+                </a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-2xl text-white"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu hidden md:hidden px-4 py-4 bg-white">
+            <a href="index.html" class="block py-2 text-black">Home</a>
+            <a href="about.html" class="block py-2 text-black">About</a>
+            <a href="contact.html" class="block py-2 text-black">Contact</a>
+            <a href="login.html" class="block py-2 text-black">Login</a>
+            <a href="signup.html" class="block py-2 bg-pink-400 text-white px-4 rounded-full">Sign Up</a>
+        </div>
+    </nav>
+
+    <section class="gradient-bg text-white min-h-screen flex items-center py-24 pt-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 relative z-10 animate-fade-in">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6">Send Smarter. Grow Faster.</h2>
+                <p class="text-lg md:text-xl mb-10 text-gray-200">EmailFlow empowers your business with instant campaign launches, real-time analytics, automated workflows, and scalable solutions—all in one platform.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="signup.html" class="bg-pink-400 text-white px-8 py-3 rounded-full hover:bg-pink-500 transition font-semibold">Start Free Trial</a>
+                    <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-purple-600 transition font-semibold">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl md:text-5xl font-bold text-center mb-16 scroll-reveal">Why Choose EmailFlow?</h3>
+            <div class="flex flex-col md:flex-row items-center mb-24 scroll-reveal">
+                <div class="md:w-1/2 relative">
+                    <div class="absolute -inset-4 bg-purple-100 rounded-3xl transform rotate-3"></div>
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Analytics" class="relative rounded-2xl shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12 mt-8 md:mt-0">
+                    <h4 class="text-3xl font-bold mb-4">Real-Time Analytics</h4>
+                    <p class="text-lg text-slate-600">Monitor opens, clicks, and conversions with our intuitive dashboard to optimize your campaigns.</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row-reverse items-center mb-24 scroll-reveal">
+                <div class="md:w-1/2 relative">
+                    <div class="absolute -inset-4 bg-pink-100 rounded-3xl transform -rotate-3"></div>
+                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Automation" class="relative rounded-2xl shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pr-12 mt-8 md:mt-0">
+                    <h4 class="text-3xl font-bold mb-4">Smart Automation</h4>
+                    <p class="text-lg text-slate-600">Automate drip campaigns and triggers to save time and boost engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <section class="py-16 bg-gradient-to-r from-purple-50 to-pink-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-12 scroll-reveal">Trusted by Leading Platforms</h3>
+            <div class="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+                <div class="flex gap-16 logo-ticker" style="width: fit-content;">
+                    <img src="https://cdn.worldvectorlogo.com/logos/slack-logo.svg" alt="Slack" class="h-14 transform hover:scale-110 transition">
+                    <img src="https://cdn.worldvectorlogo.com/logos/zapier.svg" alt="Zapier" class="h-14 transform hover:scale-110 transition">
+                    <img src="https://cdn.worldvectorlogo.com/logos/salesforce-2.svg" alt="Salesforce" class="h-14 transform hover:scale-110 transition">
+                    <img src="https://cdn.worldvectorlogo.com/logos/hubspot-1.svg" alt="HubSpot" class="h-14 transform hover:scale-110 transition">
+                    <img src="https://cdn.worldvectorlogo.com/logos/mailchimp.svg" alt="Mailchimp" class="h-14 transform hover:scale-110 transition">
+                    <img src="https://cdn.worldvectorlogo.com/logos/stripe-4.svg" alt="Stripe" class="h-14 transform hover:scale-110 transition">
+                    <img src="https://cdn.worldvectorlogo.com/logos/zapier.svg" alt="Zapier" class="h-14 transform hover:scale-110 transition">
+                    <img src="https://cdn.worldvectorlogo.com/logos/salesforce-2.svg" alt="Salesforce" class="h-14 transform hover:scale-110 transition">
+                    <img src="https://cdn.worldvectorlogo.com/logos/hubspot-1.svg" alt="HubSpot" class="h-14 transform hover:scale-110 transition">
+                    <img src="https://cdn.worldvectorlogo.com/logos/mailchimp.svg" alt="Mailchimp" class="h-14 transform hover:scale-110 transition">
+                    <img src="https://cdn.worldvectorlogo.com/logos/stripe-4.svg" alt="Stripe" class="h-14 transform hover:scale-110 transition">
+                </div>
+            </div>
+            <p class="text-center text-slate-600 mt-8 scroll-reveal">Seamlessly integrate with your favorite tools to supercharge your email marketing.</p>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-50 to-pink-50 opacity-50"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-2xl mx-auto text-center scroll-reveal">
+                <span class="inline-block bg-purple-100 text-purple-600 px-4 py-1 rounded-full mb-6">User Reviews</span>
+                <h3 class="text-4xl md:text-5xl font-bold mb-6">Voices of Success</h3>
+                <p class="text-lg text-slate-600 mb-12">Hear from thousands of businesses thriving with EmailFlow’s powerful email marketing solutions.</p>
+            </div>
+            <div class="flex justify-center mt-12 gap-6 [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)] max-h-[800px] overflow-hidden">
+                <div class="w-80 md:w-96">
+                    <div class="flex flex-col gap-6 testimonials-scroll">
+                        <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition">
+                            <p class="text-lg text-slate-600 mb-6 italic">“EmailFlow’s analytics transformed our campaigns, doubling our open rates!”</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sarah" class="w-12 h-12 rounded-full">
+                                <div>
+                                    <p class="font-semibold">Sarah Johnson</p>
+                                    <p class="text-sm text-slate-500">CMO, TechTrend</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition">
+                            <p class="text-lg text-slate-600 mb-6 italic">“The automation features saved us countless hours!”</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Michael" class="w-12 h-12 rounded-full">
+                                <div>
+                                    <p class="font-semibold">Michael Lee</p>
+                                    <p class="text-sm text-slate-500">Founder, GrowEasy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition">
+                            <p class="text-lg text-slate-600 mb-6 italic">“EmailFlow’s analytics transformed our campaigns, doubling our open rates!”</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sarah" class="w-12 h-12 rounded-full">
+                                <div>
+                                    <p class="font-semibold">Sarah Johnson</p>
+                                    <p class="text-sm text-slate-500">CMO, TechTrend</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition">
+                            <p class="text-lg text-slate-600 mb-6 italic">“The automation features saved us countless hours!”</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Michael" class="w-12 h-12 rounded-full">
+                                <div>
+                                    <p class="font-semibold">Michael Lee</p>
+                                    <p class="text-sm text-slate-500">Founder, GrowEasy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-80 md:w-96 hidden md:block">
+                    <div class="flex flex-col gap-6 testimonials-scroll" style="animation-delay: -10s;">
+                        <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition">
+                            <p class="text-lg text-slate-600 mb-6 italic">“Best platform for scaling our email campaigns!”</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Emma" class="w-12 h-12 rounded-full">
+                                <div>
+                                    <p class="font-semibold">Emma Davis</p>
+                                    <p class="text-sm text-slate-500">Marketing Lead, ScaleUp</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition">
+                            <p class="text-lg text-slate-600 mb-6 italic">“EmailFlow’s support is unmatched!”</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Laura" class="w-12 h-12 rounded-full">
+                                <div>
+                                    <p class="font-semibold">Laura Brown</p>
+                                    <p class="text-sm text-slate-500">CEO, InnovateCo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition">
+                            <p class="text-lg text-slate-600 mb-6 italic">“Best platform for scaling our email campaigns!”</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Emma" class="w-12 h-12 rounded-full">
+                                <div>
+                                    <p class="font-semibold">Emma Davis</p>
+                                    <p class="text-sm text-slate-500">Marketing Lead, ScaleUp</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition">
+                            <p class="text-lg text-slate-600 mb-6 italic">“EmailFlow’s support is unmatched!”</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Laura" class="w-12 h-12 rounded-full">
+                                <div>
+                                    <p class="font-semibold">Laura Brown</p>
+                                    <p class="text-sm text-slate-500">CEO, InnovateCo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-80 md:w-96 hidden lg:block">
+                    <div class="flex flex-col gap-6 testimonials-scroll" style="animation-delay: -20s;">
+                        <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition">
+                            <p class="text-lg text-slate-600 mb-6 italic">“The integrations are seamless and powerful!”</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="James" class="w-12 h-12 rounded-full">
+                                <div>
+                                    <p class="font-semibold">James Carter</p>
+                                    <p class="text-sm text-slate-500">CTO, NextGen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition">
+                            <p class="text-lg text-slate-600 mb-6 italic">“EmailFlow made email marketing effortless!”</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1522552557454-7b8534c5f6b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sophie" class="w-12 h-12 rounded-full">
+                                <div>
+                                    <p class="font-semibold">Sophie Miller</p>
+                                    <p class="text-sm text-slate-500">Marketing Manager, RiseCorp</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition">
+                            <p class="text-lg text-slate-600 mb-6 italic">“The integrations are seamless and powerful!”</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="James" class="w-12 h-12 rounded-full">
+                                <div>
+                                    <p class="font-semibold">James Carter</p>
+                                    <p class="text-sm text-slate-500">CTO, NextGen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition">
+                            <p class="text-lg text-slate-600 mb-6 italic">“EmailFlow made email marketing effortless!”</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1522552557454-7b8534c5f6b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sophie" class="w-12 h-12 rounded-full">
+                                <div>
+                                    <p class="font-semibold">Sophie Miller</p>
+                                    <p class="text-sm text-slate-500">Marketing Manager, RiseCorp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12 scroll-reveal">
+                <a href="#" class="bg-pink-400 text-white px-8 py-3 rounded-full hover:bg-pink-500 transition font-semibold">Join Our Community</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gradient-to-b from-slate-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center scroll-reveal">
+                <h3 class="text-4xl md:text-5xl font-bold mb-6">Pricing That Scales With You</h3>
+                <p class="text-lg text-slate-600 mb-12 max-w-2xl mx-auto">Choose a plan that fits your needs, with flexible options for startups to enterprises.</p>
+                <div class="pricing-toggle mx-auto">
+                    <button id="monthly-btn" class="active">Monthly</button>
+                    <button id="yearly-btn">Yearly <span class="badge">Save 20%</span></button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="pricing-card bg-white p-8 rounded-2xl shadow-xl transition scroll-reveal">
+                    <h4 class="text-2xl font-bold mb-4">Starter</h4>
+                    <p class="text-5xl font-bold mb-6 monthly-price">$19<span class="text-lg text-slate-600">/mo</span></p>
+                    <p class="text-5xl font-bold mb-6 yearly-price hidden">$15<span class="text-lg text-slate-600">/mo</span></p>
+                    <p class="text-slate-600 mb-6">Perfect for small businesses starting with email marketing.</p>
+                    <ul class="text-slate-600 mb-8 space-y-4">
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>10,000 Emails/Month</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Basic Analytics Dashboard</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Email Support (24/7)</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>1 User Account</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Standard Integrations</li>
+                    </ul>
+                    <a href="signup.html" class="block text-center bg-pink-400 text-white px-6 py-3 rounded-full hover:bg-pink-500 transition">Choose Starter</a>
+                </div>
+                <div class="pricing-card bg-white p-8 rounded-2xl shadow-xl transition scroll-reveal relative border-2 border-purple-600">
+                    <span class="absolute top-0 right-0 bg-purple-600 text-white px-4 py-1 rounded-bl-lg text-sm font-semibold">Most Popular</span>
+                    <h4 class="text-2xl font-bold mb-4">Pro</h4>
+                    <p class="text-5xl font-bold mb-6 monthly-price">$49<span class="text-lg text-slate-600">/mo</span></p>
+                    <p class="text-5xl font-bold mb-6 yearly-price hidden">$39<span class="text-lg text-slate-600">/mo</span></p>
+                    <p class="text-slate-600 mb-6">Ideal for growing businesses needing advanced features.</p>
+                    <ul class="text-slate-600 mb-8 space-y-4">
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>50,000 Emails/Month</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Advanced Analytics & A/B Testing</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Priority Support (24/7)</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>5 User Accounts</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Premium Integrations</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Custom Email Templates</li>
+                    </ul>
+                    <a href="signup.html" class="block text-center bg-pink-400 text-white px-6 py-3 rounded-full hover:bg-pink-500 transition">Choose Pro</a>
+                </div>
+                <div class="pricing-card bg-white p-8 rounded-2xl shadow-xl transition scroll-reveal">
+                    <h4 class="text-2xl font-bold mb-4">Enterprise</h4>
+                    <p class="text-5xl font-bold mb-6">Custom</p>
+                    <p class="text-slate-600 mb-6">Tailored solutions for large-scale email marketing needs.</p>
+                    <ul class="text-slate-600 mb-8 space-y-4">
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Unlimited Emails</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Custom Analytics & Reporting</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Dedicated Account Manager</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Unlimited User Accounts</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>Custom Integrations</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>API Access</li>
+                    </ul>
+                    <a href="contact.html" class="block text-center bg-pink-400 text-white px-6 py-3 rounded-full hover:bg-pink-500 transition">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gradient-bg text-white py-24 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-reveal">
+            <h3 class="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Emails?</h3>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Join thousands of businesses thriving with EmailFlow. Start your free trial today.</p>
+            <a href="signup.html" class="bg-pink-400 text-white px-8 py-3 rounded-full hover:bg-pink-500 transition font-semibold">Get Started Free</a>
+        </div>
+    </section>
+
+    <footer class="footer py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">EmailFlow</h3>
+                    <p class="text-slate-400">Empowering businesses with next-gen email marketing.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html">Features</a></li>
+                        <li><a href="index.html">Pricing</a></li>
+                        <li><a href="index.html">Integrations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#"><i class="fab fa-linkedin text-2xl"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-slate-400">© 2025 EmailFlow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

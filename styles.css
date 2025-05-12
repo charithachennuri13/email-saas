@@ -1,0 +1,168 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #F8FAFC;
+    color: #1E293B;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #5B21B6, #A78BFA);
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.nav-links a {
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+
+.nav-links .signup {
+    background: #F472B6;
+    color: #FFFFFF;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    transition: background 0.3s;
+}
+
+.nav-links .signup:hover {
+    background: #EC4899;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.animate-fade-in {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1s ease-out;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.input-focus {
+    transition: all 0.3s ease;
+}
+
+.input-focus:focus {
+    box-shadow: 0 0 0 3px rgba(91, 33, 182, 0.2);
+    border-color: #5B21B6;
+}
+
+.footer {
+    background: #1E293B;
+    color: #F8FAFC;
+}
+
+.footer a {
+    color: #F8FAFC;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #F472B6;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+:where(body, html)::-webkit-scrollbar {
+    width: 0px;
+}
+      .gradient-bg {
+            background: linear-gradient(135deg, #5B21B6, #A78BFA);
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 1s ease-out;
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .logo-ticker {
+            animation: logoScroll 25s linear infinite;
+        }
+        .logo-ticker:hover {
+            animation-play-state: paused;
+        }
+        @keyframes logoScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .testimonials-scroll {
+            animation: scroll 40s linear infinite;
+        }
+        .testimonials-scroll:hover {
+            animation-play-state: paused;
+        }
+        @keyframes scroll {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50%); }
+        }
+        .pricing-toggle {
+            background: #E2E8F0;
+            border-radius: 9999px;
+            padding: 0.25rem;
+            display: inline-flex;
+        }
+        .pricing-toggle button {
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .pricing-toggle button.active {
+            background: #5B21B6;
+            color: #FFFFFF;
+        }
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        .badge {
+            background: #FEE2E2;
+            color: #DC2626;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }

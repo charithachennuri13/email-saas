@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmailFlow - About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="toast.css">
+</head>
+<body>
+    <nav class="navbar py-4 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="index.html" class="logo">EmailFlow</a>
+            <div class="nav-links hidden md:flex space-x-6 items-center">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html" class="signup">Sign Up</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu hidden md:hidden px-4 py-4 bg-white">
+            <a href="index.html" class="block py-2">Home</a>
+            <a href="about.html" class="block py-2">About</a>
+            <a href="contact.html" class="block py-2">Contact</a>
+            <a href="login.html" class="block py-2">Login</a>
+            <a href="signup.html" class="block py-2 bg-pink-400 text-white px-4 rounded-full">Sign Up</a>
+        </div>
+    </nav>
+
+    <section class="py-24 pt-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 animate-fade-in">Our Story</h2>
+            <div class="flex flex-col md:flex-row items-center mb-24 scroll-reveal">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1650&q=80" alt="Team" class="rounded-2xl shadow-2xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-3xl font-bold mb-4">Who We Are</h3>
+                    <p class="text-lg text-slate-600 mb-6">Founded in 2020, EmailFlow is a leading SaaS platform dedicated to transforming email marketing. Our mission is to empower businesses with intuitive, powerful tools.</p>
+                    <p class="text-lg text-slate-600">Our passionate team blends technology and design to deliver a seamless experience for all users.</p>
+                </div>
+            </div>
+            <div class="mb-24 scroll-reveal">
+                <h3 class="text-3xl font-bold text-center mb-12">Our Milestones</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-slate-50 p-8 rounded-2xl shadow-lg">
+                        <p class="text-2xl font-bold text-purple-600 mb-2">2020</p>
+                        <p class="text-slate-600">Launched EmailFlow to simplify email marketing.</p>
+                    </div>
+                    <div class="bg-slate-50 p-8 rounded-2xl shadow-lg">
+                        <p class="text-2xl font-bold text-purple-600 mb-2">2022</p>
+                        <p class="text-slate-600">Reached 10,000 users and added advanced analytics.</p>
+                    </div>
+                    <div class="bg-slate-50 p-8 rounded-2xl shadow-lg">
+                        <p class="text-2xl font-bold text-purple-600 mb-2">2025</p>
+                        <p class="text-slate-600">Scaled to support enterprise-level campaigns.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-reveal">
+                <h3 class="text-3xl font-bold text-center mb-12">Our Team</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="John" class="w-24 h-24 rounded-full mx-auto mb-4">
+                        <p class="font-semibold">John Doe</p>
+                        <p class="text-slate-500 text-sm">CEO & Founder</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Jane" class="w-24 h-24 rounded-full mx-auto mb-4">
+                        <p class="font-semibold">Jane Smith</p>
+                        <p class="text-slate-500 text-sm">CTO</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Emma" class="w-24 h-24 rounded-full mx-auto mb-4">
+                        <p class="font-semibold">Emma Wilson</p>
+                        <p class="text-slate-500 text-sm">Head of Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">EmailFlow</h3>
+                    <p class="text-slate-400">Empowering businesses with next-gen email marketing.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html">Features</a></li>
+                        <li><a href="index.html">Pricing</a></li>
+                        <li><a href="index.html">Integrations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#"><i class="fab fa-linkedin text-2xl"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-slate-400">© 2025 EmailFlow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
