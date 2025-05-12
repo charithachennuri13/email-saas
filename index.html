@@ -35,20 +35,30 @@
                 <a href="about.html" class="hover:text-purple-300 transition-colors">About</a>
                 <a href="contact.html" class="hover:text-purple-300 transition-colors">Contact</a>
                 <a href="login.html" class="hover:text-purple-300 transition-colors">Login</a>
-                <a href="signup.html" class="signup text-white bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-full hover:from-purple-700 hover:to-pink-700 transition-all">
+                <a href="signup.html"
+                    class="signup text-white bg-gradient-to-r from-purple-600 to-pink-600 px-4 py-2 rounded-full hover:from-purple-700 hover:to-pink-700 transition-all">
                     Sign Up
                 </a>
             </div>
             <button id="menu-toggle" class="md:hidden text-2xl text-white"><i class="fas fa-bars"></i></button>
         </div>
-        <div id="mobile-menu" class="mobile-menu hidden md:hidden px-4 py-4 bg-white">
-            <a href="index.html" class="block py-2 text-black">Home</a>
-            <a href="about.html" class="block py-2 text-black">About</a>
-            <a href="contact.html" class="block py-2 text-black">Contact</a>
-            <a href="login.html" class="block py-2 text-black">Login</a>
-            <a href="signup.html" class="block py-2 bg-pink-400 text-white px-4 rounded-full">Sign Up</a>
-        </div>
     </nav>
+    <div id="mobile-menu" class="mobile-menu md:hidden">
+        <div class="flex justify-between items-center p-4 border-b border-gray-200">
+            <span class="text-lg font-bold text-purple-600">EmailFlow</span>
+            <button id="close-menu" class="close-btn text-2xl text-black"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="flex flex-col p-4 space-y-3">
+            <a href="index.html" class="block py-2 text-black hover:text-purple-600 transition-colors">Home</a>
+            <a href="about.html" class="block py-2 text-black hover:text-purple-600 transition-colors">About</a>
+            <a href="contact.html" class="block py-2 text-black hover:text-purple-600 transition-colors">Contact</a>
+            <a href="login.html" class="block py-2 text-black hover:text-purple-600 transition-colors">Login</a>
+            <a href="signup.html"
+                class="block py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 rounded-full hover:from-purple-700 hover:to-pink-700 transition-all">Sign
+                Up</a>
+        </div>
+    </div>
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay md:hidden"></div>
 
     <section class="gradient-bg text-white min-h-screen flex items-center py-24 pt-20 relative overflow-hidden">
         <div class="absolute inset-0 opacity-10">
