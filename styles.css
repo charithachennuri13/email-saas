@@ -9,6 +9,10 @@ body {
     background: linear-gradient(135deg, #5B21B6, #A78BFA);
 }
 
+#nav-col{
+    color: #1E293B !important;
+}
+
 .navbar {
     position: fixed;
     width: 100%;
