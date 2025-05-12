@@ -1,52 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.addEventListener('DOMContentLoaded', () => {
-        const navbar = document.getElementById('nav');
-        const navLinks = navbar.querySelectorAll('a');
-        const logo = navbar.querySelector('.logo');
+    const navbar = document.getElementById('nav');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuToggle = document.getElementById('menu-toggle');
+    const closeMenu = document.getElementById('close-menu');
+    const overlay = document.getElementById('mobile-menu-overlay');
 
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 200) {
-                navbar.classList.remove('backdrop-blur-md');
-                navbar.classList.add('bg-white', 'shadow-md');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
 
-                navLinks.forEach(link => {
-                    link.classList.remove('text-white');
-                    link.classList.add('text-black');
-                });
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.add('open');
+        overlay.classList.add('open');
+    });
 
-                logo.classList.remove('text-white');
-                logo.classList.add('text-black');
+    closeMenu.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        overlay.classList.remove('open');
+    });
 
-                const signupLink = navbar.querySelector('.signup');
-                if (signupLink) {
-                    signupLink.classList.remove('text-white');
-                    signupLink.classList.add('text-white', 'bg-pink-500', 'px-4', 'py-2', 'rounded-full');
-                }
-            } else {
-                navbar.classList.remove('bg-white', 'shadow-md');
-                navbar.classList.add('backdrop-blur-md');
+    overlay.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        overlay.classList.remove('open');
+    });
 
-                navLinks.forEach(link => {
-                    link.classList.remove('text-black');
-                    link.classList.add('text-white');
-                });
-
-                logo.classList.remove('text-black');
-                logo.classList.add('text-white');
-
-                const signupLink = navbar.querySelector('.signup');
-                if (signupLink) {
-                    signupLink.classList.remove('text-white', 'bg-pink-500', 'px-4', 'py-2', 'rounded-full');
-                    signupLink.classList.add('text-white');
-                }
-            }
-        });
-
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+            overlay.classList.remove('open');
         });
     });
 
